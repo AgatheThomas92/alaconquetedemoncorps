@@ -1,0 +1,46 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.reflexologie {
+  width: 100%;
+  padding: 56px;
+}
+
+.reflexologie__layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 229px;
+}
+
+.reflexologie__layout > div {
+  width: 100%;
+  max-width: 566px;
+}
+
+.reflexologie__text {
+  margin-top: 16px;
+  color: var(--color-body);
+}
+
+.reflexologie__photo {
+  display: block;
+  flex: 0 0 616px;
+  width: 616px;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .reflexologie__layout {
+    flex-direction: column;
+    gap: 37px;
+  }
+
+  .reflexologie__photo {
+    flex: none;
+    width: 100%;
+    max-width: 616px;
+  }
+}

@@ -1,0 +1,30 @@
+
+  <nav class="navbar">
+    <ul class="navbar__list">
+      @if (!isMobile()) {
+      <li>
+        <a
+          class="navbar__link"
+          routerLink="/"
+          fragment="reflexologie"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="scrollToSection('reflexologie')"
+          >Réflexologie</a
+        >
+      </li>
+      <li>
+        <a
+          class="navbar__link"
+          routerLink="/"
+          fragment="a-propos"
+          (click)="scrollToSection('a-propos')"
+          >A propos</a
+        >
+      </li>
+      }
+      <li>
+        <a class="btn btn-white" routerLink="/reservation" routerLinkActive="active">Réservez</a>
+      </li>
+    </ul>
+  </nav>

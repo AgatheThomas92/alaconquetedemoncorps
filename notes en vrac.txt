@@ -1,0 +1,11 @@
+TODO Claire
+
+- Compte GitHub
+- Compte Web3Form
+
+
+TODO Moi
+
+- Mettre la typo Poppin
+- Définir les couleurs
+- Finir de le rendre responsif (chips sous le titre, map en haut)

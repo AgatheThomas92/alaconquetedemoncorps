@@ -1,0 +1,23 @@
+.navbar {
+  position: absolute;
+  top: 34px;
+  right: 34px;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 37px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar__link {
+  color: var(--color-white);
+  text-decoration: none;
+}

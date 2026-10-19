@@ -1,0 +1,26 @@
+:root {
+  --color-primary: #c45c7a;
+  --color-body: #4A4A4A;
+  --color-white: #fff;
+  --color-black: 3A3A3A;
+  --color-pink: #d9706e;
+  --color-pink-light: #FFE8E8;
+  --color-peach: #F5C69B;
+  --color-peach-light: #FDF9F5;
+}
+
+$border-radius: 10px;
+$border-radius-sm: 4px;
+$font-family-base: 'Poppins', sans-serif;
+$font-family-citation: 'Caveat', cursive;
+
+$spacers: (
+  0: 0,
+  1: 4px,
+  2: 8px,
+  3: 16px,
+  4: 24px,
+  5: 48px,
+  6: 104px,
+  7: 112px,
+);

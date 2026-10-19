@@ -1,0 +1,30 @@
+# GitLab Pages — build Angular et publication du dossier public/
+# Doc : https://docs.gitlab.com/ee/user/project/pages/
+
+image: node:22
+
+variables:
+  # URL GitLab temporaire : https://<namespace>.gitlab.io/<project>/
+  # Pour le domaine perso à la racine, définir PAGES_BASE_HREF=/ dans
+  # Settings → CI/CD → Variables (prioritaire sur cette valeur).
+  PAGES_BASE_HREF: "/${CI_PROJECT_NAME}/"
+
+cache:
+  key:
+    files:
+      - package-lock.json
+  paths:
+    - node_modules/
+
+pages:
+  stage: deploy
+  script:
+    - npm ci
+    - npm run build -- --base-href "${PAGES_BASE_HREF}"
+    - npm run pages:artifacts
+    - mv dist/alaconquetedemoncorps/browser public
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

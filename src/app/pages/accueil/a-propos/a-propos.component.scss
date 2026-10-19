@@ -1,0 +1,64 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.a-propos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  aspect-ratio: 1916 / 609;
+  background: url('/svg/fond_fleurs.svg') center top / 100% auto no-repeat;
+  margin: 68px 0;
+}
+
+.a-propos__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.a-propos__content > h2 {
+  margin-bottom: 30px;
+}
+
+.a-propos__content-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.a-propos__content p {
+  color: var(--color-body);
+}
+
+.a-propos__content strong {
+  color: var(--color-body);
+  font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .a-propos {
+    aspect-ratio: auto;
+    min-height: 609px;
+    background-size: auto 100%;
+    background-position: left center;
+  }
+
+  .a-propos__content {
+    padding-inline: 24px;
+  }
+
+  .a-propos__content > h2 {
+    margin-bottom: 12px;
+  }
+
+  .a-propos__content-list {
+    gap: 10px;
+  }
+}
