@@ -32,6 +32,10 @@
   height: auto;
 }
 
+.card {
+  padding: 22px 26px 12px;
+}
+
 @media (max-width: 1200px) {
   .reflexologie__layout {
     flex-direction: column;

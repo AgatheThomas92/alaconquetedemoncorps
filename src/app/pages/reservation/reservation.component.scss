@@ -37,6 +37,10 @@
   }
 }
 
+.card {
+  padding: 22px 26px 12px;
+}
+
 @media (max-width: 1200px) {
   .reservation-address {
     flex-direction: column;
