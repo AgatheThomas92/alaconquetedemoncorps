@@ -2,7 +2,7 @@
 
 .citation {
   margin-top: 68px;
-  background: url('/svg/fond_citation.svg') center top / 100% auto no-repeat;
+  background: url('../../../../../public/svg/fond_citation.svg') center top / 100% auto no-repeat;
 }
 
 .citation__text {
@@ -10,10 +10,11 @@
   font-size: 50px;
   font-weight: 700;
   color: var(--color-pink);
+  text-align: center;
 }
 
 @media (max-width: 991.98px) {
-  .citatio {
+  .citation {
     aspect-ratio: auto;
     background-size: auto 100%;
     background-position: left center;
